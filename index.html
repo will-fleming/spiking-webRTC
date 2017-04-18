@@ -8,7 +8,7 @@
     // Compatibility shim
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
     // PeerJS object
-    var peer = new Peer('randomid', {host: 'https://peerjs-drasek.herokuapp.com/'});
+    var peer = new Peer({host: 'https://peerjs-drasek.herokuapp.com/', port: 9000, path: '/', debug: 3});
     peer.on('open', function(){
       $('#my-id').text(peer.id);
     });
