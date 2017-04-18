@@ -1,0 +1,22 @@
+{
+  "name": "spiking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/will-fleming/spiking-webRTC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/will-fleming/spiking-webRTC/issues"
+  },
+  "homepage": "https://github.com/will-fleming/spiking-webRTC#readme",
+  "dependencies": {
+    "peerjs": "^0.3.14"
+  }
+}
