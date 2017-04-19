@@ -12,6 +12,11 @@
     peer.on('open', function(){
       $('#my-id').text(peer.id);
     });
+    peer.on('connection', (conn) => {
+      this._registerPeer(conn.peer, conn);
+      this.emit('USER_CONNECTED', conn.peer);
+      console.log(conn);
+    });
     // Receiving a call
     peer.on('call', function(call){
       // Answer the call automatically (instead of prompting user) for demo purposes
